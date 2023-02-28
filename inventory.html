@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+.container{
+	background-image:url('img.jpg');
+	background-image:linear-gradient(orange,white,green);
+	background-position:center;
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	background-size:100%;
+	width:100%
+}
+p{
+	color:blue;
+}
+</style>
+<script>
+	function fun(item){
+		alert("You Bought "+item);
+		
+}
+</script>
+<link rel="stylesheet" href="/home/aravinda/wap/style.css">
+</head>
+<body>
+<header>
+<div id="brand">Online Electronic Store</div>
+<nav>
+<ul>
+	<li><a href="inventory.html">Home</li>
+	<li><a href="#">Products</li>
+	<li><a href="#">Orders</li>
+</ul>
+</nav>
+</header>
+<br>
+<br><main>
+<article>
+<section id="intro">
+	<div class="container">
+		<h1 style="font-size:65px;color:blue;text-align:center;">Welcome to our Inventory</h1>
+		<p>The store where you will get all your electronic needs.Please choose according to your requirement</p>		
+	</div>
+</section>
+<br><br>
+<section id="products">
+	<div class="container">
+		<div class="box"><img src="iphone.jpg" class="img"></img>
+		<h3>Product name: Iphone</h3>
+		<p>Price:$300</p>
+		<button type="Submit" class="btn" onclick="fun('Iphone')">Buy</button>
+		</div>
+		<div class="box"><img src="charger.jpg" class="img"></img>
+                <h3>Product name: Charger</h3>
+                <p>Price:$30</p>
+                <button type="Submit" class="btn" onclick="fun('Charger')">Buy</button>
+                </div>
+		<div class="box"><img src="drone.jpg" class="img"></img>
+                <h3>Product name: Drone</h3>
+                <p>Price:$1000</p>
+                <button type="Submit" class="btn" onclick="fun('Drone')">Buy</button>
+                </div>
+
+</section>
+<br>
+</article>
+</main>
+<footer style="background-color:tomato;color:white;text-align:center;font-size:30px;position:fixed;bottom:0;left:0;width:100%">Copyrights: All rights reserved &copy; 
+</footer>
+</body>
+</html>
